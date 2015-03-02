@@ -25,6 +25,7 @@ void moveToDist(int distInCm, int velocity){
 		while (get_motor_position_counter(R_MOTOR) < ticks) {
 			msleep(15);
 		}
+		
 	//Moving When Distance is Positive	
 	} if ( velocity > 0) {
 		
@@ -72,23 +73,7 @@ int main()
 	
 	moveToDist(100,-50);
 	
-	//OUTDATED Straight Move Test//
-	/*
-	moveDist(40);
-	printf("Finished Part 1!\n");
-	moveDist(-50);
-	printf("Finished Part 2!\n");
-	moveDist(200);
-	printf("Finished Part 3!\n");
-	moveDist(-100);
-	printf("Finished Part 4!\n");
-	moveDist(400);
-	printf("Finished Part 5!\n");
-	moveDist(-200);
-	printf("Finished Part 6!\n");
-	printf("\n\nTa-Da!\n");
-	return(0);
-	*/
+
 	
 }
 
